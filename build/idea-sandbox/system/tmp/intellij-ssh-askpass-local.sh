@@ -1,0 +1,2 @@
+#!/bin/sh
+"/Users/bytedance/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbr_jcef-11_0_13-osx-aarch64-b1504.49/extracted/jbr/Contents/Home/bin/java" -cp "/Users/bytedance/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.2.4/f6a20f715554259dbbbc5aabcba5e2c5f4492cc3/ideaIC-2021.2.4/plugins/git4idea/lib/git4idea-rt.jar:/Users/bytedance/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2021.2.4/f6a20f715554259dbbbc5aabcba5e2c5f4492cc3/ideaIC-2021.2.4/lib/3rd-party.jar" git4idea.nativessh.GitNativeSshAskPassApp "$@"

@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>com.github.study.BulletIdeaPlugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>BulletIdeaPlugin</name>
+    <vendor email="zlove.zhang@bytedance.com" url="">ByteDance</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    This is a plugin study demo.<br>
+    <em>This is a plugin study demo</em>
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -18,5 +18,22 @@
 
     <actions>
         <!-- Add your actions here -->
+        <!-- 创建了一个ActionGroup -->
+        <group id = "PluginStudy.TopMenu"
+               text="Study Plugin"
+               description="Demo Plugin in top menu">
+            <!-- 注册HelloWorld Action -->
+            <action class="com.github.study.plugin.action.HelloWorldAction"
+                    id="DemoAction"
+                    text="Hello World Action"
+                    description="This is a test action">
+                <!-- 设置 HelloWorld Action 的键盘快捷键-->
+                <keyboard-shortcut first-keystroke="control alt p" keymap="$default"/>
+                <!-- 将HelloWorld Action添加到剪切拷贝组中 -->
+                <add-to-group group-id="CutCopyPasteGroup" anchor="last"/>
+            </action>
+            <!-- 将这个Group添加到主菜单 -->
+            <add-to-group group-id="MainMenu" anchor="last"/>
+        </group>
     </actions>
 </idea-plugin>
