@@ -1,9 +1,0 @@
-<project>
-  <component name="ExternalProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BulletIdeaPlugin.test.iml" />
-    </modules>
-  </component>
-</project>
