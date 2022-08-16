@@ -1,6 +1,7 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.5.10'
     id 'org.jetbrains.intellij' version '1.8.0'
+    id 'java'
 }
 
 group 'com.github.study'
@@ -16,10 +17,15 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2021.2.4'
+    localPath = '/Applications/Android Studio.app/Contents'
+    plugins = ['Kotlin','android','git4idea']
 }
 patchPluginXml {
     changeNotes = """
       Add change notes here.<br>
       <em>most HTML tags may be used</em>"""
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }

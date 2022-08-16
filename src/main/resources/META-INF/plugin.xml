@@ -11,9 +11,18 @@
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.intellij.groovy</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+
+        <projectConfigurable groupId="tools" displayName="My Test Config" id="test.id"
+                             instance="com.github.study.plugin.toolwindow.SettingFactory"/>
+
+        <toolWindow id="Read-Book" secondary="false" anchor="right"
+                    factoryClass="com.github.study.plugin.toolwindow.ReadFactory"/>
     </extensions>
 
     <actions>
